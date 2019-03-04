@@ -11,8 +11,7 @@ require "pry"
   def initialize(artist)
     @name = artist 
     @artist_songs = []
-    @@all_artists << self.name
-    @@all_artists.uniq!
+    @@all_artists << self
   end 
   
   def add_song(song)
@@ -33,7 +32,7 @@ end
   def self.song_count 
     total = 0
 @@all_artists.each do |artist|
-  total += artist.artist_songs.count
+  total += artist.name.artist_songs.count
 end 
     total
   end 
