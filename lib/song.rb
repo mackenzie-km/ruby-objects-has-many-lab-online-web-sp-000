@@ -12,6 +12,6 @@ class Song
   end 
   
   def artist_name(artist = nil)
-    song.artist 
+    self.artist 
   end 
 end 
