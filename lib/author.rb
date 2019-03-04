@@ -1,12 +1,12 @@
 class Author 
   attr_accessor :name, :posts 
   
-  @@all = [] 
+  @@all_authors = [] 
   
   def initialize (name)
     @name = name 
     @posts = []
-    @@all << name
+    @@all_authors << name
   end 
   
   def posts 
@@ -26,7 +26,7 @@ class Author
  
  def self.post_count
    total = 0
-   @@all.uniq.each do |author|
+   @@all_authors.uniq.each do |author|
      total += author.posts.count
    end 
  end 
