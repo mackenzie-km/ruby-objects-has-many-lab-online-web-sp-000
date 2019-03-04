@@ -27,7 +27,7 @@ class Author
  def self.post_count
    total = 0
    @@all.uniq.each do |author|
-     total += self.name.posts.count
+     total += name.posts.count
    end 
  end 
   
