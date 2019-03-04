@@ -12,6 +12,7 @@ require "pry"
     @name = artist 
     @artist_songs = []
     @@all_artists << self.name
+    @@all_artists.uniq!
   end 
   
   def add_song(song)
