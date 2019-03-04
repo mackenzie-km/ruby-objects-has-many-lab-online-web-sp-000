@@ -6,7 +6,7 @@ class Author
   def initialize (name)
     @name = name 
     @posts = []
-    @@all_authors << name
+    @@all_authors << @name
   end 
   
   def posts 
