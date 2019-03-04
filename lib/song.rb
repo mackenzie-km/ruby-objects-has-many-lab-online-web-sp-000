@@ -6,4 +6,12 @@ class Song
     @name = song 
     @@all << self
   end
+  
+  def self.all
+    @@all
+  end 
+  
+  def artist_name(artist = nil)
+    @artist = artist 
+  end 
 end 
