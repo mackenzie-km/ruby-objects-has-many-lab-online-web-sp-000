@@ -29,6 +29,7 @@ class Author
    @@all_authors.each do |author|
      total += author.posts.count
    end 
+   total
  end 
   
 end 
