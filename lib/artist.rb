@@ -11,7 +11,7 @@ require "pry"
   def initialize(artist)
     @name = artist 
     @artist_songs = []
-    @@all_artists << self.name.uniq
+    @@all_artists << self.name
   end 
   
   def add_song(song)
