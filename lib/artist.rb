@@ -31,7 +31,7 @@ end
   
   def self.song_count 
     total = 0
-@@all_artists.each do |artist|
+@@all_artists.uniq.each do |artist|
   total += artist.artist_songs.count
 end 
     total
