@@ -22,7 +22,7 @@ class Author
     title.author = self 
   end
  
- def post_count
+ def self.post_count
    total = 0
    @@all.each do |author|
      total += author.posts.count 
