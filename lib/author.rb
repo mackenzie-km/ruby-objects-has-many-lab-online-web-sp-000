@@ -18,4 +18,5 @@ class Author
     post_title = Post.new(post_title)
     post_title.author = self 
   end
+  
 end 
