@@ -32,7 +32,7 @@ end
   def self.song_count 
     total = 0
 @@all_artists.each do |artist|
-  total += artist.name.artist_songs.count
+  total += artist.artist_songs.count
 end 
     total
   end 
